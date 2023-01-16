@@ -1,13 +1,14 @@
 html {
-  margin: auto;
-}
-.container {
-  background-color: #0a212e;
   font-family: "Poppins";
   font-size: 22px;
+}
+.container-fluid {
+  background-color: #0a212e;
+}
 
-  margin-right: 50px;
-  margin-left: 50px;
+.text-muted{
+  color: #e9eff4;
+  opacity: 0.9;
 }
 
 h1,
@@ -111,11 +112,37 @@ p {
 }
 
 .section-6-icon {
-  background-color: #6599b7;
+  background-color: #194056;
   padding: 20px;
-  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .section-6-icon img {
   width: 50px;
+}
+
+
+.section-7 {
+  background-color: #173445;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.card-section-7 {
+  background-color: #0A212E;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px;
+  
+}
+
+.card-section-7-icon {
+  background-color: #173445;
+  border-radius: 20px;
+  
 }

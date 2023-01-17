@@ -19,11 +19,20 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/dark-theme.css" rel="stylesheet" id="theme-link">
+    
+    <link href="css/styles-fonts.css" rel="stylesheet" />
+    <link href="css/toggle-styles.css" rel="stylesheet" />
+    <link href="css/animation-type-style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="pricing.css" rel="stylesheet" />
   </head>
@@ -38,32 +47,49 @@
           href="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
         >
-          <h2>DEQUITY</h2>
+        <img class="" src="assets/imgs/dark_logo.svg" alt="" />
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text">Home</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text">Features</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text">About</a></li>
         </ul>
 
-        <div class="">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="dropdown mr-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              EN
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <label class="switch mr-2">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          
           <button type="button" class="btn btn-outline-primary me-2">
-            Login
+            Invest in your wealth
           </button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
         </div>
       </header>
       <!-- /header -->
       <!-- Section1 -->
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8">
-          <h1 class="fw-light">
-            <b>Invest in your </b><b class="title-green">Future</b>
+      <div class="row py-lg-5 section-1">
+        <div class="col-lg-12">
+          <button class="btn-toggle">Toggle Dark-Mode</button>
+          <h1 class="fw-light text-1">
+            Invest in your 
+              <b id="demo" class="text-1 title-green"></b><span class="blinking-cursor title-green">|</span>
+            
           </h1>
-          <p class="lead">Real Estate Investing for All</p>
+          <p class="lead text-2">Real Estate Investing for All</p>
           <p>
             <a href="#" class="btn btn-outline-primary my-2">Main call to action</a>
           </p>
@@ -73,17 +99,17 @@
       <!-- Section2 -->
       <div class="row section-2">
         <div class="col-lg-7 col-md-12">
-          <h2 class="fw-light">
-            2<b>Real estate investments have finally, become accessible!</b>
+          <h2 class="fw-light text-1">
+            2Real estate investments have finally, become accessible!
           </h2>
-          <p class="lead text-muted">
+          <p class="lead text-2 op-7">
             Now, investors can collectively own the entire building or unit.
           </p>
-          <p class="lead text-muted">
+          <p class="lead text-2 op-7">
             Invest in cash flow rental properties, receive income, and reinvest
             to buy more.
           </p>
-          <p class="lead">Own a piece of rental property today!</p>
+          <p class="lead text-2">Own a piece of rental property today!</p>
         </div>
         <div class="col-lg-5 col-md-12">
           <div class="card slider-card">
@@ -103,8 +129,8 @@
       <!-- Section3 -->
       <div class="row section-3">
         <div class="col-lg-5 col-md-12">
-          <h2 class="fw-light">
-            3 <b>Getting started is simple!</b>
+          <h2 class="fw-light text-1">
+            3 Getting started is simple!
           </h2>
           <p>
             <a href="#" class="btn btn-primary my-2">Main call to action</a>
@@ -113,11 +139,10 @@
         <div class="col-lg-7 col-md-12">
           <div class="row card-section-3">
             <div class="col-lg-6 card-section-3-right">
-              <div class="section-3-icon d-flex justify-content-center align-items-center"><h3>1</h3></div>
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <div class="section-3-icon"><h3>1</h3></div>
+              <h4 class="text-2">Browse</h4>
+              <p class="text-3 op-5">
+                View detailed financial data, inspection reports, appraisals and more.
               </p>
             </div>
             <div class="col-lg-6 card-section-3-left">
@@ -126,34 +151,26 @@
           </div>
           <div class="row card-section-3">
             <div class="col-lg-6 card-section-3-right">
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <div class="section-3-icon "><h3>2</h3></div>
+              <h4 class="text-2">Select</h4>
+              <p class="text-3 op-5">
+                Select your ideal portfolio of rental properties and how much you want to invest.
               </p>
             </div>
             <div class="col-lg-6 card-section-3-left">
-              <img
-                class="card-img-top"
-                src="assets/imgs/phone2.png"
-                alt="Card image cap"
-              />
+              <img class="" src="assets/imgs/phone2.png" alt="Card image cap" />
             </div>
           </div>
           <div class="row card-section-3">
             <div class="col-lg-6 card-section-3-right">
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <div class="section-3-icon "><h3>3</h3></div>
+              <h4 class="text-2">Invest</h4>
+              <p class="text-3 op-5">
+                Invest with a couple of clicks and enjoy biweekly rent distributions deposited directly to your wallet.
               </p>
             </div>
             <div class="col-lg-6 card-section-3-left">
-              <img
-                class="card-img-top"
-                src="assets/imgs/phone3.png"
-                alt="Card image cap"
-              />
+              <img class="" src="assets/imgs/phone3.png" alt="Card image cap" />
             </div>
           </div>
         </div>
@@ -162,10 +179,10 @@
       <!-- Section4 -->
       <div class="row section-4">
         <div class="col-lg-4 col-md-12">
-          <h2 class="fw-light">
-           4 <b>How does it work?</b>
+          <h2 class="fw-light text-1">
+           4 How does it work?
           </h2>
-          <p class="lead text-muted">
+          <p class="lead text-2 op-7">
             You invest in cash-flow rental properties with existing tenants who
             pay rent, which then deposit to your wallet.
           </p>
@@ -185,28 +202,28 @@
       <!-- Section5 -->
       <div class="row section-5">
         <div class="row">
-          <h2 class="fw-light">
-           5 <b>How does it work?</b>
+          <h2 class="fw-light text-1 mb-5">
+           5 How do I make money?
           </h2>
         </div>
         <div class="row">
-          <div class="col-lg-4">
-            <div>
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="mb-auto">
+              <h4 class="text-2">Card title</h4>
+              <p class="text-3 op-5">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
             </div>
             <div>
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
+              <h4 class="text-2">Card title</h4>
+              <p class="text-3 op-5">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 mb-4">
             <img
               class=""
               width="100%"
@@ -214,17 +231,17 @@
               alt="Card image cap"
             />
           </div>
-          <div class="col-lg-4">
-            <div>
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
+          <div class="col-lg-4 d-flex flex-column">
+            <div class="mb-auto">
+              <h4 class="text-2">Card title</h4>
+              <p class="text-3 op-5">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
             </div>
             <div>
-              <h4 class=""><b>Card title</b></h4>
-              <p class="text-muted">
+              <h4 class="text-2">Card title</h4>
+              <p class="text-3 op-5">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -236,13 +253,13 @@
       <!-- Section6 -->
       <div class="row section-6">
         <div class="col-lg-7 col-md-12">
-          <h2 class="fw-light">
-           6 <b>How do I sell?</b>
+          <h2 class="fw-light text-1">
+           6 How do I sell?
           </h2>
-          <h5 class="fw-light">
-            <b>You’re always in control.</b>
+          <h5 class="fw-light text-2">
+            You’re always in control.
           </h5>
-          <p class="lead text-muted">
+          <p class="lead text-3 op-5">
             Our user-friendly interface provides maximum user convenience and a
             perfect user experience.
           </p>
@@ -251,9 +268,9 @@
               <div class="section-6-icon flex-shrink-1">
                 <img class="" src="assets/imgs/clock-svgrepo-com1.svg" alt="" />
               </div>
-              <div class="flex-1 w-100 m-2">
-                <h6 class="">Liquidity</h6>
-                <p class="text-muted m-0">
+              <div class="flex-1 w-100 m-2 ">
+                <h6 class="text-3">Liquidity</h6>
+                <p class="m-0 text-4 op-5">
                   Buy and sell your holdings at any time.
                 </p>
               </div>
@@ -265,8 +282,8 @@
                 <img class="" src="assets/imgs/shield-icon.svg" alt="" />
               </div>
               <div class="flex-1 w-100 m-2">
-                <h6 class="">Flexibility</h6>
-                <p class="text-muted m-0">
+                <h6 class="text-3">Flexibility</h6>
+                <p class=" m-0 text-4 op-5">
                   No lockups, no holding periods, no-nonsense.
                 </p>
               </div>
@@ -279,8 +296,8 @@
                 <img class="" src="assets/imgs/money bag-dollar.svg" alt="" />
               </div>
               <div class="flex-1 w-100 m-2">
-                <h6 class="">Control</h6>
-                <p class="text-muted m-0">
+                <h6 class="text-3">Control</h6>
+                <p class="m-0 text-4 op-5">
                   Set the sale price and the number of units you’d like to sell, and other investors can buy them.
                 </p>
               </div>
@@ -300,77 +317,77 @@
       <!-- Section7 -->
       <div class="row section-7">
         <div class="row col-12 d-flex flex-column">
-          <h2 class="fw-light text-center">
-          7  <b>How does it work?</b>
+          <h2 class="fw-light text-center text-1">
+          7  How does it work?
           </h2>
-          <p class="text-muted text-center">
+          <p class="text-center text-2 op-7">
             Some quick example text to build on the card title and make up
             the bulk of the card's content.
           </p>
         </div>
         <div class="row col-12">
-          <div class="col-4 col-sx-12">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class=""><b>Expertise</b></h4></div>
-                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/money bag-dollar.svg" alt="" /></div>
+                <div class="p-2 w-100"><h4 class="text-3">Expertise</h4></div>
+                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/search-01.svg" alt="" /></div>
               </div>
-              <p class="text-muted">
+              <p class="text-4 op-5">
                 dEquity empowers investors to invest directly in high-quality properties selected by industry experts and professionally managed.
               </p>
             </div>
           </div>
-          <div class="col-4 col-sx-12">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class=""><b>High Yield</b></h4></div>
-                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/money bag-dollar.svg" alt="" /></div>
+                <div class="p-2 w-100"><h4 class="text-3">High Yield</h4></div>
+                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/chart-arrow-up-02.svg" alt="" /></div>
               </div>
-              <p class="text-muted">
+              <p class="text-4 op-5">
                 Properties located in stable, high-appreciation, and high-cash-flow areas that deliver a solid long-term return.
               </p>
             </div>
           </div>
-          <div class="col-4 col-sx-12">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class=""><b>Diversification</b></h4></div>
-                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/money bag-dollar.svg" alt="" /></div>
+                <div class="p-2 w-100"><h4 class="text-3">Diversification</h4></div>
+                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/pie-chart-03.svg" alt="" /></div>
               </div>
-              <p class="text-muted">
+              <p class="text-4 op-5">
                 Own multiple properties without the landlord's hassles. We handle the heavy lifting so you can sit back, relax, and easily reinvest to grow your portfolio.
               </p>
             </div>
           </div>
-        <div class="col-4 col-sx-12">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
           <div class=" card-section-7">
             <div class="d-flex align-self-start">
-              <div class="p-2 w-100"><h4 class=""><b>Fractional Ownership</b></h4></div>
-              <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/money bag-dollar.svg" alt="" /></div>
+              <div class="p-2 w-100"><h4 class="text-3">Fractional Ownership</h4></div>
+              <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/pie-04.svg" alt="" /></div>
             </div>
-            <p class="text-muted">
+            <p class="text-4 op-5">
               NFTs are backed by high-yield rental properties, which empower investors, lower entry barriers, & reduce the cost of sale.
             </p>
           </div>
         </div>
-          <div class="col-4 col-sx-12">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class=""><b>Fully Passive</b></h4></div>
-                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/money bag-dollar.svg" alt="" /></div>
+                <div class="p-2 w-100"><h4 class="">Fully Passive</h4></div>
+                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/image-05.svg" alt="" /></div>
               </div>
-              <p class="text-muted">
+              <p class="text-4 op-5">
                 Every property comes with full-service management, freeing you from time-consuming tasks and decisions.
               </p>
             </div>
           </div>
-          <div class="col-4 col-sx-12">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class=""><b>User-Friendly</b></h4></div>
-                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/money bag-dollar.svg" alt="" /></div>
+                <div class="p-2 w-100"><h4 class="">User-Friendly</h4></div>
+                <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/star-06.svg" alt="" /></div>
               </div>
-              <p class="text-muted">
+              <p class="text-4 op-5">
                 dEquity provides a great user experience, ensuring that our community can make a well-informed decision about when and how to invest.
               </p>
             </div>
@@ -390,10 +407,10 @@
         </div>
         <div class="col-lg-6 col-md-12">
           <div class="card-section-8-rigtht">
-            <h2 class="fw-light">
-              8 <b>Security</b>
+            <h2 class="fw-light text-1">
+              8 Security
             </h2>
-             <p class="lead text-muted">
+             <p class="lead text-2 op-5">
               Our best-in-class industry solution utilizes cutting-edge technology to provide maximum protection for non-custodial ownership and private keys.
              </p>
              <div class="row mb-3">
@@ -401,9 +418,9 @@
                  <div class="section-6-icon flex-shrink-1">
                    <img class="" src="assets/imgs/clock-svgrepo-com1.svg" alt="" />
                  </div>
-                 <div class="flex-1 w-100 m-2">
-                   <h6 class="">Serious</h6>
-                   <p class="text-muted m-0">
+                 <div class="flex-1 w-100 ml-2">
+                   <h6 class="text-2">Serious</h6>
+                   <p class="text-3 op-5 m-0">
                     The security is provided by mathematical algorithms, and all data is stored on a blockchain, secured by modern cryptography.
                    </p>
                  </div>
@@ -414,9 +431,9 @@
                  <div class="section-6-icon flex-shrink-1">
                    <img class="" src="assets/imgs/shield-icon.svg" alt="" />
                  </div>
-                 <div class="flex-1 w-100 m-2">
-                   <h6 class="">Privacy</h6>
-                   <p class="text-muted m-0">
+                 <div class="flex-1 w-100 ml-2">
+                   <h6 class="text-2">Privacy</h6>
+                   <p class="text-3 op-5 m-0">
                     All data in our servers are encrypted with AES 256-bit encryption, the same as top banks use today.
                    </p>
                  </div>
@@ -440,14 +457,14 @@
       <!-- Section10 -->
       <div class="row section-10">
         <div class="col-lg-5 col-md-12">
-          <h3 class="fw-light">
-           10 <b>We believe that democracy is the strongest when everyone has ownership</b>
+          <h3 class="fw-light text-1">
+           10 We believe that democracy is the strongest when everyone has ownership
           </h3>
-          <h3 class="fw-light">
-            <b>Joint real estate (r)investing (r)evolution</b>
+          <h3 class="fw-light text-2">
+            Joint real estate (r)investing (r)evolution
            </h3>
            <p>
-            <a href="#" class="btn my-2">Main call to action</a>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
           </p>
         </div>
         <div class="col-lg-7 col-md-12 card-section-10">
@@ -461,46 +478,47 @@
       </div>
       <!-- /Section10 -->
 
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <footer class="pt-4 my-md-5 pt-md-5 section-11">
         <div class="row">
           <div class="col-6 col-md">
-            <h5>Features</h5>
+            <h5 class="text-1">Features</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
+              <li><a class="text-2 op-7" href="#">Cool stuff</a></li>
+              <li><a class="text-2 op-7" href="#">Random feature</a></li>
+              <li><a class="text-2 op-7" href="#">Team feature</a></li>
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5>Resources</h5>
+            <h5 class="text-1">Resources</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
+              <li><a class="text-2 op-7" href="#">Resource</a></li>
+              <li><a class="text-2 op-7" href="#">Resource name</a></li>
+              <li><a class="text-2 op-7" href="#">Another resource</a></li>
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5>About</h5>
+            <h5 class="text-1">Resources</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
+              <li><a class="text-2 op-7" href="#">Resource</a></li>
+              <li><a class="text-2 op-7" href="#">Resource name</a></li>
+              <li><a class="text-2 op-7" href="#">Another resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-1">About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-2 op-7" href="#">Team</a></li>
+              <li><a class="text-2 op-7" href="#">Locations</a></li>
+              <li><a class="text-2 op-7" href="#">Privacy</a></li>
             </ul>
           </div>
           <div class="col-12 col-md">
             <img
               class="mb-2"
-              src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+              src="assets/imgs/dark_logo.svg"
               alt=""
-              width="24"
-              height="24"
             />
-            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+            <small class="d-block mb-3 text-2 op-7">© Copyright 2022 dEquity. All Rights Reserved.</small>
           </div>
         </div>
       </footer>
@@ -523,6 +541,8 @@
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="assets/js/toggle-theme.js"></script>
+    <script src="assets/js/typing-text-effect.js"></script>
     <script>
       Holder.addTheme("thumb", {
         bg: "#55595c",

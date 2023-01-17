@@ -3,7 +3,7 @@ html {
   font-size: 22px;
 }
 .container-fluid {
-  background-color: #0a212e;
+  background-color: #ffffff;
 }
 
 .text-muted{
@@ -18,25 +18,35 @@ h4,
 h5,
 h6,
 p {
-  color: white;
+  color: #0A212E;
 }
 
 .btn{
-  border: #39B5BF solid 3px;
-  background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
   border-radius: 50px;
-  padding: 24px 64px;
+  padding: 14px 24px;
+}
+
+.btn-primary{
+  background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
   color: white;
 }
 
-btn-outline-primary{
+.btn-outline-primary{
   border: #39B5BF solid 3px;
-  background: none;
   color: #39B5BF;
 }
 
+
 .title-green {
-  color: aquamarine;
+  color: #74D5FF;
+}
+
+.nav-text{
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0A212E;
 }
 
 .section-1 {
@@ -46,6 +56,7 @@ btn-outline-primary{
 .section-2 {
   padding: 100px 50px 100px 50px;
   background-color: #194056;
+  color: #ffffff;
 }
 
 .section-3 {
@@ -72,12 +83,16 @@ btn-outline-primary{
 width: 60px;
 height: 60px;
 background: #0A212E;
-border-radius: 17.1429px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 17px;
 margin-bottom: 24px;  
 }
 
 .card-section-3-right {
   padding: 30px;
+  color: #ffffff;
 }
 
 .card-section-3-left {
@@ -106,13 +121,9 @@ margin-bottom: 24px;
 }
 
 .section-5 {
-  background-color: #1c4156;
+  
   padding: 100px 50px 100px 50px;
-  background: linear-gradient(
-    136.13deg,
-    rgba(118, 192, 223, 0.6) -0.07%,
-    rgba(24, 77, 107, 0.6) 101.73%
-  );
+  /* background:linear-gradient(136.13deg, rgba(118, 192, 223, 0.6) -0.07%, rgba(24, 77, 107, 0.6) 101.73%); */
 }
 
 .section-6 {
@@ -125,9 +136,10 @@ margin-bottom: 24px;
     rgba(118, 192, 223, 0.6) -0.07%,
     rgba(24, 77, 107, 0.6) 101.73%
   );
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: 0;
   display: flex;
   justify-content: end;
 }
@@ -149,12 +161,12 @@ margin-bottom: 24px;
 
 
 .section-7 {
-  background-color: #173445;
   padding: 100px 50px 100px 50px;
 }
 
 .card-section-7 {
   background-color: #0A212E;
+  color: #ffffff;
   border-radius: 20px;
   margin: 20px;
   padding: 30px;
@@ -184,7 +196,7 @@ margin-bottom: 24px;
     rgba(24, 77, 107, 0.6) 101.73%
   );
   border-radius: 20px;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,4 +213,10 @@ margin-left: 100px;
 
 .section-10 {
   padding: 70px 50px 70px 50px;
+}
+
+.section-11 {
+  background-color: #194056;
+  padding-left: 50px;
+  padding-right: 50px;
 }

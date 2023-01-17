@@ -1,0 +1,190 @@
+
+.fw-700{font-weight: 700;}
+.fw-600{font-weight: 600;}
+.fw-500{font-weight: 500;}
+.fw-400{font-weight: 400;}
+.fw-300{font-weight: 300;}
+
+.op-7{opacity: 0.7;}
+.op-5{opacity: 0.5;}
+
+.section-1 .text-1{
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 112px;
+}
+
+.section-1 .text-2{
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 54px;
+} 
+
+.section-2 .text-1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.section-2 .text-2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.section-2 .text-3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.section-3 .text-1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.section-3 .text-2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.section-3 .text-3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.section-3 .text-4{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.section-4 .text-1{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+}
+
+.section-4 .text-2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.section-5 .text-1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.section-5 .text-2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.section-5 .text-3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.section-6 .text-1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.section-6 .text-2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.section-6 .text-3{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+.section-6 .text-4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.section-7 .text-1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.section-7 .text-2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.section-7 .text-3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.section-7 .text-4{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.section-8 .text-1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 75px;
+}
+
+.section-8 .text-2{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+.section-8 .text-3{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.section-10 .text-1{
+    font-weight: 700;
+    font-family: "Red Hat Display";
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.section-10 .text-2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.section-11 .text-1{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.section-11 .text-2{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.section-11 .text-3{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}

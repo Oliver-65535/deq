@@ -22,8 +22,10 @@ p {
 }
 
 .btn{
+  font-size: 15px;
   border-radius: 50px;
-  padding: 14px 24px;
+  padding: 12px 24px;
+  
 }
 
 .btn-primary{
@@ -64,7 +66,10 @@ p {
 }
 
 
-.slider-card,
+.slider-card {
+  border-radius: 20px;
+} 
+
 .slider-card img {
   border-radius: 20px 20px 0px 0px;
 }
@@ -219,4 +224,8 @@ margin-left: 100px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 64px;
+}
+
+li,a {
+  color: #ffffff;
 }

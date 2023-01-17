@@ -38,6 +38,18 @@
     line-height: 24px;
 }
 
+.section-2 .text-4{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.section-2 .text-5{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+
 .section-3 .text-1{
     font-weight: 700;
     font-size: 60px;
@@ -181,6 +193,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
+    color: inherit;
 }
 
 .section-11 .text-3{

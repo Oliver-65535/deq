@@ -1,10 +1,27 @@
 const btn = document.querySelector(".btn-toggle");
-const theme = document.querySelector("#theme-link");
+const theme = document.querySelector("#theme");
 btn.addEventListener("click", function() {
-  // Swap out the URL for the different stylesheets
-  if (theme.getAttribute("href") == "css/light-theme.css") {
-    theme.href = "css/dark-theme.css";
-  } else {
-    theme.href = "css/light-theme.css";
-  }
+  toggleTheme()
 });
+
+// function to set a given theme/color-scheme
+function setTheme(themeName) {
+  localStorage.setItem('theme', themeName);
+  document.getElementById("theme").className = themeName;
+}
+// function to toggle between light and dark theme
+function toggleTheme() {
+ if (localStorage.getItem('theme') === 'theme-dark'){
+     setTheme('theme-light');
+ } else {
+     setTheme('theme-dark');
+ }
+}
+// Immediately invoked function to set the theme on initial load
+(function () {
+ if (localStorage.getItem('theme') === 'theme-dark') {
+     setTheme('theme-dark');
+ } else {
+     setTheme('theme-light');
+ }
+})();

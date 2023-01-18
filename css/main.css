@@ -2,13 +2,43 @@ html {
   font-family: "Poppins";
   font-size: 22px;
 }
-.container-fluid {
-  background-color: #fff;
+
+.theme-dark{
+  --background-main: #0a212e;
+  --background-1: #194056;
+  --background-2: #173445;
+  --background-3: #112835;
+
+  --text-color: #ffffff;
+  --text-color-inverted: #ffffff;
+
+  --toggle-dark-background:#173445;
+  --toggle-light-background:none;
+
+  --logo-url: url("/assets/imgs/dark_logo.svg");
 }
 
-.text-muted{
-  color: #e9eff4;
-  opacity: 0.9;
+.theme-light{
+  --background-main: #ffffff;
+  --background-1: #194056;
+  --background-2: #173445;
+  --background-3: none;
+
+  --text-color:  #0a212e;
+  --text-color-inverted: #ffffff;
+
+  --toggle-dark-background:none;
+  --toggle-light-background:#0BA9AA;
+
+  --logo-url: url("/assets/imgs/logo-light.svg");
+}
+
+.t-invert{
+  color: var(--text-color-inverted);
+}
+
+.container-fluid {
+  background-color: var(--background-main);
 }
 
 h1,
@@ -18,14 +48,26 @@ h4,
 h5,
 h6,
 p {
-  color: black;
+  color:  var(--text-color);
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.logo-image{
+ background-image: var(--logo-url);
+ width: 200px;
+ height: 23px;
+}
+
+.header{
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .btn{
   font-size: 15px;
   border-radius: 50px;
   padding: 12px 24px;
-  
 }
 
 .btn-primary{
@@ -33,8 +75,17 @@ p {
   color: white;
 }
 
+.dropdown-toggle{
+  font-size: 15px;
+  background: none;
+  color: var(--text-color);
+  border: #76C0DF solid 1px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 14px; 
+}
+
 .btn-outline-primary{
-  border: #39B5BF solid 3px;
+  border: #39B5BF solid 1px;
   color: #39B5BF;
 }
 
@@ -48,22 +99,37 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: var(--text-color);
 }
+
 
 .section-1 {
   padding: 100px 50px 222px 50px;
+  background: radial-gradient( at right bottom, rgba(118, 192, 223, 0.4) 10%, rgba(24, 77, 107, 0) 60%);
+
+}
+
+.left-gradient{
+  background: linear-gradient(270deg, rgba(237,237,237,0) 0%, rgba(118,192,223,0.2) 93%);}
+
+.right-gradient{
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(118,192,223,0.1) 93%);
+}
+
+.gradient-center{
+  background: radial-gradient(circle closest-side at 50% 60%, rgba(118, 192, 223, 0.2) 0%, rgba(24, 77, 107, 0) 90%);
 }
 
 .section-2 {
   padding: 100px 50px 100px 50px;
-  background-color: #194056;
+  background-color: var(--background-1);
 }
 
 .section-3 {
   padding: 100px 50px 100px 50px;
   
 }
+
 
 
 .slider-card {
@@ -74,7 +140,7 @@ p {
   border-radius: 20px 20px 0px 0px;
 }
 .card {
-  background-color: #0a212e;
+  background-color: var(--background-main);
 }
 
 .card-section-3 {
@@ -96,6 +162,7 @@ margin-bottom: 24px;
 
 .card-section-3-right {
   padding: 30px;
+  border-radius: 20px;
 }
 
 .card-section-3-left {
@@ -107,6 +174,7 @@ margin-bottom: 24px;
   display: flex;
   justify-content: center;
   padding-top: 30px;
+  border-radius: 0 20px 20px 0;
 }
 
 .card-section-3-left img {
@@ -114,8 +182,9 @@ margin-bottom: 24px;
 }
 
 .section-4 {
-  background-color: #112835;
+  background-color: var(--background-3);
   padding: 100px 50px 100px 50px;
+ 
 }
 
 .card-section-4 {
@@ -126,8 +195,8 @@ margin-bottom: 24px;
 .section-5 {
   background-color: #1c4156;
   padding: 100px 50px 100px 50px;
-  background: #0A212E,linear-gradient(136.13deg, rgba(118, 192, 223, 0.6) -0.07%, rgba(24, 77, 107, 0.6) 101.73%);
 }
+
 
 .section-6 {
   padding: 100px 50px 100px 50px;
@@ -149,6 +218,7 @@ margin-bottom: 24px;
 
 .section-6-icon {
   background-color: #194056;
+  margin-left: 15px;
   padding: 20px;
   width: 90px;
   height: 90px;
@@ -164,12 +234,12 @@ margin-bottom: 24px;
 
 
 .section-7 {
-  background-color: #173445;
+  background-color: var(--background-2);
   padding: 100px 50px 100px 50px;
 }
 
 .card-section-7 {
-  background-color: #0A212E;
+  background: #0A212E;
   border-radius: 20px;
   margin: 20px;
   padding: 30px;
@@ -211,21 +281,37 @@ margin-left: 100px;
 }
 
 .section-9 {
-  background-color: #173445;
+  background-color: var(--background-2);
   padding: 70px 50px 70px 50px;
+  margin: 0 -15px 0 -15px;
 }
 
 .section-10 {
   padding: 70px 50px 70px 50px;
+ 
 }
 
 .section-11 {
-  background-color: #194056;
+  background-color: var(--background-1);
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 64px;
+  padding-bottom: 30px;
+  margin: 0 -15px 0 -15px;
 }
+
+.section-12 {
+  background-color: var(--background-1);
+  padding-left: 50px;
+  padding-right: 50px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
 
 li,a {
   color: #ffffff;
 }
+
+
+

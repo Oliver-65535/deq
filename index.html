@@ -19,11 +19,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/dark-theme.css" rel="stylesheet" id="theme-link">
+    <link href="css/main.css" rel="stylesheet">
     
     <link href="css/styles-fonts.css" rel="stylesheet" />
     <link href="css/toggle-styles.css" rel="stylesheet" />
     <link href="css/animation-type-style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -37,30 +38,31 @@
     <link href="pricing.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="theme-dark" id="theme">
     <div class=" container-fluid">
       <!-- header -->
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+      <header 
+        class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between py-3 mb-4"
       >
         <a
           href="/"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+          class=" d-flex align-items-center col-md-3 mb-2 mb-md-0  text-decoration-none"
         >
-        <img class="" src="assets/imgs/dark_logo.svg" alt="" />
+        <!-- <img src="assets/imgs/dark_logo.svg" alt="" /> -->
+        <div class="logo-image"></div>
         </a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 nav-text">Home</a></li>
-          <li><a href="#" class="nav-link px-2 nav-text">Features</a></li>
-          <li><a href="#" class="nav-link px-2 nav-text">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 nav-text">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 nav-text">About</a></li>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 t-invert">
+          <li><a href="#" class="nav-link px-2 nav-text ">How it Works</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text ">Properties</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text ">About</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text ">Learn</a></li>
+          <li><a href="#" class="nav-link px-2 nav-text ">Blog</a></li>
         </ul>
 
         <div class="d-flex justify-content-between align-items-center">
           <div class="dropdown mr-2 dropdown-wrapper">
-            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               EN
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -70,7 +72,7 @@
             </div>
           </div>
           <div class="btn-toggle d-flex justify-content-between toggle-wrapper">
-            <div class="icon-div"><img src="assets/imgs/theme-icons/light-theme-icon.svg" alt=""></div>
+            <div class="icon-div icon-div-light"><img src="assets/imgs/theme-icons/light-theme-icon.svg" alt=""></div>
             <div class="icon-div icon-div-dark"><img src="assets/imgs/theme-icons/dark-theme-icon.svg" alt=""></div>
           </div>
           
@@ -81,14 +83,14 @@
       </header>
       <!-- /header -->
       <!-- Section1 -->
-      <div class="row py-lg-5 section-1">
+      <div class="row section-1">
         <div class="col-lg-12">
-          <h1 class="fw-light text-1">
+          <h1 class="fw-light text-1 ">
             Invest in your 
-              <b id="demo" class="text-1 title-green"></b><span class="blinking-cursor title-green">|</span>
+              <b id="demo" class="text-1 title-green "></b><span class="blinking-cursor title-green">|</span>
             
           </h1>
-          <p class="lead text-2">Real Estate Investing for All</p>
+          <p class="lead text-2 ti">Real Estate Investing for All</p>
           <p>
             <a href="#" class="btn btn-outline-primary my-2">Main call to action</a>
           </p>
@@ -97,70 +99,76 @@
       <!-- /Section1 -->
       <!-- Section2 -->
       <div class="row section-2">
-        <div class="col-lg-7 col-md-12">
-          <h2 class="fw-light text-1">
-            2Real estate investments have finally, become accessible!
-          </h2>
-          <p class="lead text-2 op-7">
-            Now, investors can collectively own the entire building or unit.
-          </p>
-          <p class="lead text-2 op-7">
-            Invest in cash flow rental properties, receive income, and reinvest
-            to buy more.
-          </p>
-          <p class="lead text-2">Own a piece of rental property today!</p>
+        <div class="col-lg-6 col-md-12 d-flex flex-column" >
+          
+            <div class="mb-auto">
+              <h2 class="fw-light text-1 t-invert mb-4" >
+                Real estate investments have finally, become accessible!
+              </h2>
+              <p class="lead text-2 op-7 t-invert mb-4">
+                Now, investors can collectively own the entire building or unit.
+              </p>
+              <p class="lead text-2 op-7 t-invert mb-4">
+                Invest in cash flow rental properties, receive income, and reinvest
+                to buy more.
+              </p>
+              <p class="lead text-2 t-invert">Own a piece of rental property today!</p>
+            </div>
+            <div class="text-3 t-invert op-7">
+              * Miami is one of the largest US markets where rent increases the fastest, +14.3% YoY.Source: www.zillow.com
+            </div>
+         
+          
         </div>
+        <div class="col-1"></div>
         <div class="col-lg-5 col-md-12">
           <div class="d-flex align-items-center">
             
-            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M31.5 15.75L22.5 27L31.5 38.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>  
+            <i class="fa-solid fa-chevron-left m-2 t-invert"></i>
             <div class="card slider-card">
               <img class="" src="assets/imgs/house-1.jpg" alt="Card image cap" />
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center text-4">
-                  <div class=" w-100"><h4 class="">Multifamily</h4></div>
-                  <div class=" flex-shrink-1"><h4 class="">Yield:<b class="title-green">14.3%*<b></h4></div>
+                  <div class=" w-100"><h4 class="text-4">Multifamily</h4></div>
+                  <div class=" flex-shrink-1"><h4 class="text-4">Yield:14.3%*</h4></div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center text-5">
-                  <div class=" w-100"><p class="">Ticker</p></div>
-                  <div class=" flex-shrink-1"><p class=" op-5">EXR</p></div>
+                  <div class=" w-100"><p class="text-5">Ticker</p></div>
+                  <div class=" flex-shrink-1"><p class="text-5 op-5">EXR</p></div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center text-5">
-                  <div class=" w-100"><p class="">Year built</p></div>
-                  <div class=" flex-shrink-1"><p class=" op-5">2019</p></div>
+                  <div class=" w-100"><p class="text-5">Year built</p></div>
+                  <div class=" flex-shrink-1"><p class="text-5 op-5">2019</p></div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center text-5">
-                  <div class=" w-100"><p class="">Unit price</p></div>
-                  <div class=" flex-shrink-1"><p class=" op-5">$100</p></div>
+                  <div class=" w-100"><p class="text-5">Unit price</p></div>
+                  <div class=" flex-shrink-1"><p class="text-5 op-5">$100</p></div>
                 </div>
               </div>
             </div>
-            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.5 15.75L31.5 27L22.5 38.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+            <i class="fa-solid fa-chevron-right m-2 t-invert"></i>
               
           </div>
         </div>
       </div>
       <!-- /Section2 -->
       <!-- Section3 -->
-      <div class="row section-3">
+      <div class="row section-3 left-gradient">
         <div class="col-lg-5 col-md-12">
-          <h2 class="fw-light text-1">
-            3 Getting started is simple!
+          <h2 class="fw-light text-1 ">
+            Getting started is simple!
           </h2>
           <p>
             <a href="#" class="btn btn-primary my-2">Main call to action</a>
           </p>
         </div>
-        <div class="col-lg-7 col-md-12">
+        <div class="col-1"></div>
+        <div class="col-lg-6 col-md-12">
           <div class="row card-section-3">
             <div class="col-lg-6 card-section-3-right">
-              <div class="section-3-icon"><h3>1</h3></div>
-              <h4 class="text-2">Browse</h4>
-              <p class="text-3 op-5">
+              <div class="section-3-icon"><h3 class="t-invert">1</h3></div>
+              <h4 class="text-2 t-invert">Browse</h4>
+              <p class="text-3 op-5 t-invert">
                 View detailed financial data, inspection reports, appraisals and more.
               </p>
             </div>
@@ -170,9 +178,9 @@
           </div>
           <div class="row card-section-3">
             <div class="col-lg-6 card-section-3-right">
-              <div class="section-3-icon "><h3>2</h3></div>
-              <h4 class="text-2">Select</h4>
-              <p class="text-3 op-5">
+              <div class="section-3-icon "><h3 class="t-invert">2</h3></div>
+              <h4 class="text-2 t-invert">Select</h4>
+              <p class="text-3 op-5 t-invert">
                 Select your ideal portfolio of rental properties and how much you want to invest.
               </p>
             </div>
@@ -182,9 +190,9 @@
           </div>
           <div class="row card-section-3">
             <div class="col-lg-6 card-section-3-right">
-              <div class="section-3-icon "><h3>3</h3></div>
-              <h4 class="text-2">Invest</h4>
-              <p class="text-3 op-5">
+              <div class="section-3-icon "><h3 class="t-invert">3</h3></div>
+              <h4 class="text-2 t-invert">Invest</h4>
+              <p class="text-3 op-5 t-invert">
                 Invest with a couple of clicks and enjoy biweekly rent distributions deposited directly to your wallet.
               </p>
             </div>
@@ -196,21 +204,21 @@
       </div>
       <!-- /Section3 -->
       <!-- Section4 -->
-      <div class="row section-4">
-        <div class="col-lg-4 col-md-12">
-          <h2 class="fw-light text-1">
-           4 How does it work?
+      <div class="row section-4 right-gradient">
+        <div class="col-lg-5 col-md-12 pr-4">
+          <h2 class="fw-light text-invert text-1">
+           How does it work?
           </h2>
-          <p class="lead text-2 op-7">
+          <p class="lead text-invert text-2 op-7">
             You invest in cash-flow rental properties with existing tenants who
             pay rent, which then deposit to your wallet.
           </p>
         </div>
-        <div class="col-lg-8 col-md-12">
+        <div class="col-1"></div>
+        <div class="col-lg-6  col-md-12">
           <div class="row  card-section-4">
             <img
-              
-              max-width="555px"
+              width="90%"
               src="assets/imgs/sheme-gpaph.svg"
               alt="Card image cap"
             />
@@ -219,23 +227,23 @@
       </div>
       <!-- /Section4 -->
       <!-- Section5 -->
-      <div class="row section-5">
+      <div class="row section-5 gradient-center">
         <div class="row">
-          <h2 class="fw-light text-1 mb-5">
-           5 How do I make money?
+          <h2 class="fw-light text-invert text-1 mb-5 pl-2 t-invert">
+            How do I make money?
           </h2>
         </div>
-        <div class="row">
+        <div class="row section-5-scheme">
           <div class="col-lg-4 d-flex flex-column">
             <div class="mb-auto">
-              <h4 class="text-2">Rental Cash Flow</h4>
-              <p class="text-3 op-5">
+              <h4 class="text-2 t-invert">Rental Cash Flow</h4>
+              <p class="text-3 op-5 t-invert">
                 Investing in income-producing properties is designed to generate cash flow with stable assets.
               </p>
             </div>
             <div>
-              <h4 class="text-2">Capital Growth</h4>
-              <p class="text-3 op-5">
+              <h4 class="text-2 t-invert">Capital Growth</h4>
+              <p class="text-3 op-5 t-invert">
                 Reinvesting profits into another property is a great way to exponentially grow your economic well-being.
               </p>
             </div>
@@ -250,14 +258,14 @@
           </div>
           <div class="col-lg-4 d-flex flex-column">
             <div class="mb-auto">
-              <h4 class="text-2">Rent Appreciation</h4>
-              <p class="text-3 op-5">
+              <h4 class="text-2 t-invert">Rent Appreciation</h4>
+              <p class="text-3 op-5 t-invert">
                 Rent increases on an annual basis create opportunities for higher payouts.
               </p>
             </div>
             <div>
-              <h4 class="text-2">Capital Appreciation</h4>
-              <p class="text-3 op-5">
+              <h4 class="text-2 t-invert">Capital Appreciation</h4>
+              <p class="text-3 op-5 t-invert">
                 Your investment grows as the property value increases, which can help you reach your financial goals.
               </p>
             </div>
@@ -267,9 +275,9 @@
       <!-- /Section5 -->
       <!-- Section6 -->
       <div class="row section-6">
-        <div class="col-lg-7 col-md-12">
-          <h2 class="fw-light text-1">
-           6 How do I sell?
+        <div class="col-lg-6 col-md-12">
+          <h2 class="text-1">
+           How do I sell?
           </h2>
           <h5 class="fw-light text-2">
             You’re always in control.
@@ -319,6 +327,7 @@
             </div>
           </div>
         </div>
+        <div class="col-1"></div>
         <div class="col-lg-5 col-md-12 card-section-6">
           <img
             width="80%"
@@ -330,12 +339,12 @@
       </div>
       <!-- /Section6 -->
       <!-- Section7 -->
-      <div class="row section-7">
+      <div class="row section-7 gradient-center">
         <div class="row col-12 d-flex flex-column">
-          <h2 class="fw-light text-center text-1">
-          7  How does it work?
+          <h2 class="fw-light text-center text-1 t-invert">
+            How does it work?
           </h2>
-          <p class="text-center text-2 op-7">
+          <p class="text-center text-2 op-7 t-invert">
             Some quick example text to build on the card title and make up
             the bulk of the card's content.
           </p>
@@ -344,10 +353,10 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class="text-3">Expertise</h4></div>
+                <div class="p-2 w-100"><h4 class="text-3 t-invert">Expertise</h4></div>
                 <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/search-01.svg" alt="" /></div>
               </div>
-              <p class="text-4 op-5">
+              <p class="text-4 op-5 t-invert">
                 dEquity empowers investors to invest directly in high-quality properties selected by industry experts and professionally managed.
               </p>
             </div>
@@ -355,10 +364,10 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class="text-3">High Yield</h4></div>
+                <div class="p-2 w-100"><h4 class="text-3 t-invert">High Yield</h4></div>
                 <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/chart-arrow-up-02.svg" alt="" /></div>
               </div>
-              <p class="text-4 op-5">
+              <p class="text-4 op-5 t-invert">
                 Properties located in stable, high-appreciation, and high-cash-flow areas that deliver a solid long-term return.
               </p>
             </div>
@@ -366,10 +375,10 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class="text-3">Diversification</h4></div>
+                <div class="p-2 w-100"><h4 class="text-3 t-invert">Diversification</h4></div>
                 <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/pie-chart-03.svg" alt="" /></div>
               </div>
-              <p class="text-4 op-5">
+              <p class="text-4 op-5 t-invert">
                 Own multiple properties without the landlord's hassles. We handle the heavy lifting so you can sit back, relax, and easily reinvest to grow your portfolio.
               </p>
             </div>
@@ -377,10 +386,10 @@
         <div class="col-12 col-md-6 col-lg-6 col-xl-4">
           <div class=" card-section-7">
             <div class="d-flex align-self-start">
-              <div class="p-2 w-100"><h4 class="text-3">Fractional Ownership</h4></div>
+              <div class="p-2 w-100"><h4 class="text-3 t-invert">Fractional Ownership</h4></div>
               <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/pie-04.svg" alt="" /></div>
             </div>
-            <p class="text-4 op-5">
+            <p class="text-4 op-5 t-invert">
               NFTs are backed by high-yield rental properties, which empower investors, lower entry barriers, & reduce the cost of sale.
             </p>
           </div>
@@ -388,10 +397,10 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class="">Fully Passive</h4></div>
+                <div class="p-2 w-100"><h4 class="text-3 t-invert">Fully Passive</h4></div>
                 <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/image-05.svg" alt="" /></div>
               </div>
-              <p class="text-4 op-5">
+              <p class="text-4 op-5 t-invert">
                 Every property comes with full-service management, freeing you from time-consuming tasks and decisions.
               </p>
             </div>
@@ -399,10 +408,10 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-self-start">
-                <div class="p-2 w-100"><h4 class="">User-Friendly</h4></div>
+                <div class="p-2 w-100"><h4 class="text-3 t-invert">User-Friendly</h4></div>
                 <div class="p-2 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/star-06.svg" alt="" /></div>
               </div>
-              <p class="text-4 op-5">
+              <p class="text-4 op-5 t-invert">
                 dEquity provides a great user experience, ensuring that our community can make a well-informed decision about when and how to invest.
               </p>
             </div>
@@ -423,7 +432,7 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-section-8-rigtht">
             <h2 class="fw-light text-1">
-              8 Security
+            Security
             </h2>
              <p class="lead text-2 op-5">
               Our best-in-class industry solution utilizes cutting-edge technology to provide maximum protection for non-custodial ownership and private keys.
@@ -460,7 +469,7 @@
       <!-- /Section8 -->
       <!-- Section9 -->
       
-        <div class="section-9 d-flex justify-content-between align-items-center">
+        <div class="section-9 d-flex  justify-content-between align-items-center">
           <div><img class="" src="assets/imgs/companies-logo/binance.svg" alt="" /></div>
           <div><img class="" src="assets/imgs/companies-logo/Forbes.svg" alt="" /></div>
           <div><img class="" src="assets/imgs/companies-logo/coinbase.svg" alt="" /></div>
@@ -470,10 +479,10 @@
       
       <!-- /Section9 -->
       <!-- Section10 -->
-      <div class="row section-10">
+      <div class="row section-10 right-gradient">
         <div class="col-lg-6 col-md-12">
           <h3 class="fw-light text-1">
-           10 We believe that democracy is the strongest when everyone has ownership
+           We believe that democracy is the strongest when everyone has ownership
           </h3>
           <h3 class="fw-light text-2 title-green">
             Joint real estate investing (r)evolution
@@ -493,10 +502,10 @@
       </div>
       <!-- /Section10 -->
 
-      <footer class="pt-4 my-md-5 pt-md-5 section-11">
+      <footer class="pt-4 pt-md-5 section-11">
         <div class="row">
           <div class="col-6 col-md">
-            <h5 class="text-1">Resourses</h5>
+            <h5 class="text-1 t-invert">Resourses</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-2 op-7" href="#">About Us</a></li>
               <li><a class="text-2 op-7" href="#">Learn</a></li>
@@ -504,7 +513,7 @@
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5 class="text-1"> Quick Links</h5>
+            <h5 class="text-1 t-invert"> Quick Links</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-2 op-7" href="#">Top Offers</a></li>
               <li><a class="text-2 op-7" href="#">Portfolio</a></li>
@@ -512,7 +521,7 @@
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5 class="text-1">Documents</h5>
+            <h5 class="text-1 t-invert">Documents</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-2 op-7" href="#">Privacy Policy</a></li>
               <li><a class="text-2 op-7" href="#">Terms of Service</a></li>
@@ -520,7 +529,7 @@
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5 class="text-1">Contact Us</h5>
+            <h5 class="text-1 t-invert">Contact Us</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-2  op-7" href="#">Help & Support</a></li>
               <li><a class="text-2  op-7" href="#">info@dEquity.io</a></li>
@@ -532,10 +541,12 @@
               src="assets/imgs/dark_logo.svg"
               alt=""
             />
-            <p class="d-block mb-3 text-2 op-7">© Copyright 2022 dEquity. All Rights Reserved.</p>
+            <p class="mb-3 text-2 op-7 t-invert">© Copyright 2022 dEquity. All Rights Reserved.</p>
           </div>
         </div>
+        <div class="section-12 "><p class="text-1 op-7 t-invert">Please be aware that the site is currently in a testing phase, and no services are provided. The sole functionality of the site at present is to collect user-provided email contact details to contact persons who may have an interest in the services in the future.</p></div>
       </footer>
+      
     </div>
 
     <!-- Bootstrap core JavaScript

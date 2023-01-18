@@ -193,10 +193,11 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
-    color: inherit;
+   
 }
 
-.section-11 .text-3{
+.section-12 .text-1{
+    max-width: 670px;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;

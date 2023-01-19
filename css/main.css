@@ -15,7 +15,7 @@ html {
   --toggle-dark-background:#173445;
   --toggle-light-background:none;
 
-  --logo-url: url("./assets/imgs/dark_logo.svg");
+  --logo-url: url("/assets/imgs/dark_logo.svg");
 }
 
 .theme-light{
@@ -30,7 +30,7 @@ html {
   --toggle-dark-background:none;
   --toggle-light-background:#0BA9AA;
 
-  --logo-url: url("./assets/imgs/logo-light.svg");
+  --logo-url: url("/assets/imgs/logo-light.svg");
 }
 
 .t-invert{

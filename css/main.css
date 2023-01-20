@@ -3,6 +3,17 @@ html {
   font-size: 22px;
 }
 
+.mcover{
+  z-index: 11;
+  position: absolute;
+  width: 1440px;
+height: 8459px;
+  background-image: url("/assets/imgs/LandingInvert.jpg");
+  background-size: 100%; /* Современные браузеры */;
+  opacity: 0.2;
+  
+}
+
 .theme-dark{
   --background-main: #0a212e;
   --background-1: #194056;
@@ -60,20 +71,25 @@ p {
  margin-right: 15px;
 }
 
+.nav-link{
+  padding: 0px 100px;
+}
+
 .header{
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .btn{
   font-size: 15px;
   border-radius: 50px;
-  padding: 12px 24px;
+  padding: 14px 28px;
 }
 
 .btn-primary{
   background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
   color: white;
+  border: none;
 }
 
 .dropdown-toggle{
@@ -92,6 +108,18 @@ p {
   color: #39B5BF;
 }
 
+.btn-large{
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 24px 64px;
+}
+
+.btn-large-pd{
+  padding: 20px 82px;
+}
 
 .title-green {
   color: #74D5FF;
@@ -109,13 +137,6 @@ p {
   color: var(--text-color);
 }
 
-
-.section-1 {
-  padding: 100px 50px 222px 50px;
-  background: radial-gradient( at right bottom, rgba(118, 192, 223, 0.4) 10%, rgba(24, 77, 107, 0) 60%);
-
-}
-
 .left-gradient{
   background: linear-gradient(270deg, rgba(237,237,237,0) 0%, rgba(118,192,223,0.2) 93%);}
 
@@ -127,35 +148,59 @@ p {
   background: radial-gradient(circle closest-side at 50% 60%, rgba(118, 192, 223, 0.2) 0%, rgba(24, 77, 107, 0) 90%);
 }
 
+.text-gradient{
+  background-color: #74D5FF;
+  background-image:  linear-gradient(136.13deg, #74D5FF -0.07%, #208B85 101.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2{
+  background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.section-1 {
+  padding: 82px 50px 190px 50px;
+  background: radial-gradient( at right bottom, rgba(118, 192, 223, 0.4) 10%, rgba(24, 77, 107, 0) 60%);
+
+}
+
+
+
 .section-2 {
-  padding: 100px 50px 100px 50px;
+  padding: 100px 50px 140px 50px;
   background-color: var(--background-1);
 }
 
-.section-3 {
-  padding: 100px 50px 100px 50px;
-  
-}
-
-
-
-
 .slider-card {
   border-radius: 20px;
-  max-width: 543px;
+  /* max-width: 543px; */
 } 
 
 .slider-card img {
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
 .card {
   background-color: var(--background-main);
 }
 
+.section-3 {
+  padding: 100px 50px 70px 50px;
+  
+}
+
 .card-section-3 {
+  height: 300px;
   background-color: #194056;
   border-radius: 20px;
   margin-bottom: 30px;
+  
+  
 }
 
 .section-3-icon {
@@ -181,6 +226,7 @@ margin-bottom: 24px;
 }
 
 .card-section-3-left {
+  height: 300px;
   background: linear-gradient(
     136.13deg,
     rgba(118, 192, 223, 0.6) -0.07%,
@@ -195,13 +241,13 @@ margin-bottom: 24px;
 
 
 .card-section-3-left img {
-  width: 200px;
+  
 }
 
 .section-4 {
   background-color: var(--background-3);
-  padding: 100px 50px 100px 50px;
- 
+  padding: 100px 50px 120px 50px;
+
 }
 
 .card-section-4 {
@@ -211,12 +257,12 @@ margin-bottom: 24px;
 
 .section-5 {
   background-color: #1c4156;
-  padding: 100px 50px 100px 50px;
+  padding: 100px 50px 125px 50px;
 }
 
 
 .section-6 {
-  padding: 100px 50px 100px 50px;
+  padding: 100px 50px 85px 50px;
 }
 
 .card-section-6 {
@@ -252,7 +298,7 @@ margin-bottom: 24px;
 
 .section-7 {
   background-color: var(--background-2);
-  padding: 100px 30px 100px 30px;
+  padding: 100px 30px 70px 30px;
 }
 
 .card-section-7 {
@@ -282,7 +328,7 @@ margin-bottom: 24px;
 }
 
 .section-8 {
-  padding: 100px 50px 100px 50px;
+  padding: 100px 50px 70px 50px;
 }
 
 .card-section-8 {
@@ -302,18 +348,18 @@ margin-bottom: 24px;
 
 .section-9 {
   background-color: var(--background-2);
-  padding: 70px 50px 70px 50px;
+  padding: 50px 50px 50px 50px;
   margin: 0 -15px 0 -15px;
 }
 
 .section-10 {
-  padding: 70px 50px 70px 50px;
+  padding: 100px 50px 50px 50px;
  
 }
 
 .section-11 {
   background-color: var(--background-1);
-  padding-left: 50px;
+  padding-left: 60px;
   padding-right: 50px;
   padding-bottom: 30px;
   margin: 0 -15px 0 -15px;

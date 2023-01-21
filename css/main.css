@@ -449,3 +449,12 @@ li,a{
 
 }
 
+@media screen and (max-width: 400px) {
+  
+  .navbar{ padding-left: 50px;
+    padding-right: 20px;}
+
+}
+
+
+

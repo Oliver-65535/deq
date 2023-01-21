@@ -39,49 +39,47 @@
   </head>
 
   <body class="theme-dark" id="theme">
-    <!-- <div class="cover"></div> -->
-    <div class=" container-fluid p-0 m-0">
+    
+    <div class=" container-fluid p-0 m-0 w-100">
       <!-- header -->
-      <header 
-        class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between py-3 mb-4"
-      >
-        <a
-          href="/"
-          class="d-flex logo align-items-center flex-wrap col-md-3 mb-2 mb-md-0 p-0 text-decoration-none"
-        >
-        <!-- <img src="assets/imgs/dark_logo.svg" alt="" /> -->
-        <div class="logo-image "></div>
-        </a>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 t-invert">
-          <li><a href="#how-works" class="nav-link px-2 nav-text ">How it Works</a></li>
-          <li><a href="#properties" class="nav-link px-2 nav-text ">Properties</a></li>
-          <li><a href="#about" class="nav-link px-2 nav-text ">About</a></li>
-          <li><a href="#learn" class="nav-link px-2 nav-text ">Learn</a></li>
-          <li><a href="#blog" class="nav-link px-2 nav-text ">Blog</a></li>
-        </ul>
-
-        <div class="d-flex  justify-content-between align-items-center">
-          <div class="dropdown mr-1 dropdown-wrapper">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              EN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-          <div class="btn-toggle d-flex  justify-content-between toggle-wrapper">
-            <div class="icon-div icon-div-light"><img src="assets/imgs/theme-icons/light-theme-icon.svg" alt=""></div>
-            <div class="icon-div icon-div-dark"><img src="assets/imgs/theme-icons/dark-theme-icon.svg" alt=""></div>
-          </div>
-          
-          <button type="button" class="btn btn-outline-primary me-2">
-            <!-- Invest in your wealth -->
-            <i class="fa-solid fa-arrow-right"></i>
+      <header>
+        <nav class="navbar navbar-expand-lg t-invert ">
+          <a class="navbar-brand" href="#"><div class="logo-image "></div></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars t-invert"></i>
           </button>
-        </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav m-auto">
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 t-invert">
+                <li><a href="#how-works" class="nav-link px-2 nav-text ">How it Works</a></li>
+                <li><a href="#properties" class="nav-link px-2 nav-text ">Properties</a></li>
+                <li><a href="#about" class="nav-link px-2 nav-text ">About</a></li>
+                <li><a href="#learn" class="nav-link px-2 nav-text ">Learn</a></li>
+                <li><a href="#blog" class="nav-link px-2 nav-text ">Blog</a></li>
+              </ul>
+            </ul>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="dropdown mr-1 dropdown-wrapper">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  EN
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="btn-toggle d-flex  justify-content-between toggle-wrapper">
+                <div class="icon-div icon-div-light"><img src="assets/imgs/theme-icons/light-theme-icon.svg" alt=""></div>
+                <div class="icon-div icon-div-dark"><img src="assets/imgs/theme-icons/dark-theme-icon.svg" alt=""></div>
+              </div>
+              
+              <button type="button" class="btn flex-wrap btn-outline-primary me-2">
+                Invest in your wealth
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+              </button>
+          </div>
+        </nav>
       </header>
       <!-- /header -->
       <!-- Section1 -->
@@ -134,10 +132,11 @@
                   <div class="col md-text">
                     Multifamily
                   </div>
-                  <div class="col-auto ">
+                  <div class="col-auto p-0 text-right md-text">
+                    Yield:
                   </div>
-                  <div class="col text-right md-text">
-                    Yield:<b class="value-green">14.3%*</b>
+                  <div class="col-auto p-0 text-right md-text">
+                    <b class="value-green">14.3%*</b>
                   </div>
                 </div>
                 
@@ -454,7 +453,7 @@
                    <img class="" width="33px" src="assets/imgs/section-7/lock.svg" alt="" />
                  </div>
                  <div class="flex-1 w-100 ml-2">
-                   <h6 class="text-2">Serious</h6>
+                   <h6 class="text-2">Serious security</h6>
                    <p class="text-3 op-5 m-0">
                     The security is provided by mathematical algorithms, and all data is stored on a blockchain, secured by modern cryptography.
                    </p>

@@ -26,6 +26,8 @@ height: 8459px;
   --toggle-dark-background:#173445;
   --toggle-light-background:none;
 
+  --color-burger:#ffffff;
+
   --logo-url: url("/assets/imgs/dark_logo.svg");
 }
 
@@ -41,11 +43,13 @@ height: 8459px;
   --toggle-dark-background:none;
   --toggle-light-background:#0BA9AA;
 
+  --color-burger:#0BA9AA;
+
   --logo-url: url("/assets/imgs/logo-light.svg");
 }
 
-.t{
-  color: var(--text-color);
+.t-menu{
+  color: var(--color-burger);
 }
 
 .t-invert{

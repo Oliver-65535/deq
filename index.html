@@ -39,7 +39,7 @@
   </head>
 
   <body class="theme-dark" id="theme">
-    <div class="cover"></div>
+    <!-- <div class="cover"></div> -->
     <div class=" container-fluid p-0">
       <!-- header -->
       <header 
@@ -61,7 +61,7 @@
           <li><a href="#blog" class="nav-link px-2 nav-text ">Blog</a></li>
         </ul>
 
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex  justify-content-between align-items-center">
           <div class="dropdown mr-1 dropdown-wrapper">
             <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               EN
@@ -72,13 +72,14 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </div>
-          <div class="btn-toggle d-flex justify-content-between toggle-wrapper">
+          <div class="btn-toggle d-flex  justify-content-between toggle-wrapper">
             <div class="icon-div icon-div-light"><img src="assets/imgs/theme-icons/light-theme-icon.svg" alt=""></div>
             <div class="icon-div icon-div-dark"><img src="assets/imgs/theme-icons/dark-theme-icon.svg" alt=""></div>
           </div>
           
           <button type="button" class="btn btn-outline-primary me-2">
-            Invest in your wealth
+            <!-- Invest in your wealth -->
+            <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </header>
@@ -122,17 +123,24 @@
           
         </div>
         <div class="col-1"></div>
-        <div class="col-lg-5 col-md-12 p-0">
+        <div class="col-lg-5 col-md-12 nnn p-0">
           <div class="d-flex align-items-center">
             
             <i class="fa-solid fa-chevron-left m-2 t-invert"></i>
             <div class="card slider-card">
               <img class=""  src="assets/imgs/house-1.jpg" alt="Card image cap" />
               <div class="card-body">
-                <div class="d-flex  justify-content-between align-items-center text-4">
-                  <div class=" w-100"><h4 class="text-4">Multifamily</h4></div>
-                  <div class=" flex-shrink-1"><h4 class="text-4">Yield:<b class="value-green">14.3%*</b></h4></div>
+                <div class="row t-invert text-4 m-0">
+                  <div class="col md-text">
+                    Multifamily
+                  </div>
+                  <div class="col-auto ">
+                  </div>
+                  <div class="col text-right md-text">
+                    Yield:<b class="value-green">14.3%*</b>
+                  </div>
                 </div>
+                
                 <div class="d-flex  justify-content-between align-items-center text-5">
                   <div class=" w-100"><p class="text-5">Ticker</p></div>
                   <div class=" flex-shrink-1"><p class="text-5 op-5">EXR</p></div>
@@ -342,12 +350,14 @@
       <!-- Section7 -->
       <div class="row section-7 gradient-center">
         <div class="row col-12 d-flex flex-column ">
+          <div class="section7-text">
           <h2 class="fw-light text-center text-1 t-invert">
             What makes us different?
           </h2>
           <p class="text-center text-2 op-7 t-invert " >
             We’re on a mission to democratize wealth by giving investors decision-making power.
           </p>
+        </div>
         </div>
         <div class="row col-12">
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
@@ -375,7 +385,7 @@
           <div class="col-12 col-md-6 col-lg-6 col-xl-4">
             <div class=" card-section-7">
               <div class="d-flex align-items-center">
-                <div class="p-0 w-100"><h4 class="text-3 t-invert">Diversification</h4></div>
+                <div class="p-0 w-100"><h4 class="text-3 t-invert">Diversi<br class="hidden-lg"/>fication</h4></div>
                 <div class="p-0 flex-shrink-1 card-section-7-icon"><img class="" src="assets/imgs/section-7/pie-chart-03.svg" alt="" /></div>
               </div>
               <p class="text-4 op-5 t-invert">
@@ -429,8 +439,8 @@
             alt="Card image cap"
           />
         </div>
-        
-        <div class="col-lg-6 ml-5 col-md-12 ">
+        <div class="col-1"></div>
+        <div class="col-lg-6 col-md-12 ">
           <div class="card-section-8-rigtht">
             <h2 class="fw-light text-1">
             Security
@@ -470,13 +480,13 @@
       <!-- /Section8 -->
       <!-- Section9 -->
       
-        <div class="section-9 d-flex  justify-content-between align-items-center">
-          <div><img class="" src="assets/imgs/companies-logo/binance.svg" alt="" /></div>
-          <div><img class="" src="assets/imgs/companies-logo/Forbes.svg" alt="" /></div>
-          <div><img class="" src="assets/imgs/companies-logo/coinbase.svg" alt="" /></div>
-          <div><img class="" src="assets/imgs/companies-logo/nasdaq.svg" alt="" /></div>
-          <div><img class="" src="assets/imgs/companies-logo/Bloomberg.svg" alt="" /></div>
-        </div>
+        <!-- <div class="row text-center section-9 d-flex justify-content-center align-items-center">
+          <div class="col"><img class="" src="assets/imgs/companies-logo/binance.svg" alt="" /></div>
+          <div class="col"><img class="" src="assets/imgs/companies-logo/Forbes.svg" alt="" /></div>
+          <div class="col d-md-none d-lg-block"><img class="" src="assets/imgs/companies-logo/coinbase.svg" alt="" /></div>
+          <div class="col d-lg-none d-xl-block"><img class="" src="assets/imgs/companies-logo/nasdaq.svg" alt="" /></div>
+          <div class="col d-lg-none d-xl-block"><img class="" src="assets/imgs/companies-logo/Bloomberg.svg" alt="" /></div>
+        </div> -->
       
       <!-- /Section9 -->
       <!-- Section10 -->

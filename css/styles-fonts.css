@@ -153,8 +153,8 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
-    width: 50%;
-    align-self: center;
+    max-width: 900px;
+    align-self: center; 
 }
 
 .section-7 .text-3{

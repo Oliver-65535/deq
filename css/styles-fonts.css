@@ -177,8 +177,16 @@
 }
 
 .section-8 .text-2{
-    font-weight: 600;
+    font-weight: 500;
+    font-style: normal;
     font-size: 25px;
+    line-height: 38px;
+}
+
+.section-8 .text-4{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
     line-height: 38px;
 }
 

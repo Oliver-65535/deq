@@ -160,6 +160,24 @@ li,a{
   background: radial-gradient(circle closest-side at 50% 60%, rgba(118, 192, 223, 0.2) 0%, rgba(24, 77, 107, 0) 90%);
 }
 
+.card-background-gradient{
+  background-color: #FFFFFF;
+  background: linear-gradient(138.71deg, #76C0DF -0.07%, #184D6B 103.08%);
+}
+
+.figure-gradient{
+  position:absolute;
+  top: 2300px;
+  left: -200px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  background: linear-gradient(138.71deg, #76C0DF -0.07%, #184D6B 103.08%);
+  filter: blur(200px);
+  z-index: 1;
+}
+
 .text-gradient{
   background-color: #74D5FF;
   background-image:  linear-gradient(136.13deg, #74D5FF -0.07%, #208B85 101.73%);
@@ -207,7 +225,7 @@ text-fill-color: transparent;
 }
 
 .card-section-3 {
-  /* height: 300px; */
+  /* min-height: 300px; */
   background-color: #194056;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -238,15 +256,10 @@ margin-bottom: 24px;
 }
 
 .card-section-3-left {
-  height: 300px;
-  background: linear-gradient(
-    136.13deg,
-    rgba(118, 192, 223, 0.6) -0.07%,
-    rgba(24, 77, 107, 0.6) 101.73%
-  );
+  max-height: 400px;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  align-items: flex-end;
   border-radius: 0 20px 20px 0;
 }
 
@@ -276,11 +289,6 @@ margin-bottom: 24px;
 }
 
 .card-section-6 {
-  background: linear-gradient(
-    136.13deg,
-    rgba(118, 192, 223, 0.6) -0.07%,
-    rgba(24, 77, 107, 0.6) 101.73%
-  );
   border-radius: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -345,11 +353,6 @@ margin-bottom: 24px;
 }
 
 .card-section-8 {
-  background: linear-gradient(
-    136.13deg,
-    rgba(118, 192, 223, 0.6) -0.07%,
-    rgba(24, 77, 107, 0.6) 101.73%
-  );
   border-radius: 20px;
   padding: 50px;
   display: flex;
@@ -430,7 +433,6 @@ li,a{
 }
 
 .card-section-7 {
-  
   height: 320px; 
 }
 
@@ -462,6 +464,10 @@ li,a{
   .navbar{ padding-left: 20px;
     padding-right: 10px;}
 
+
+    .md-text{
+      font-size: 70%;
+    }
 }
 
 

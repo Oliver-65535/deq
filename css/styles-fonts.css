@@ -161,6 +161,7 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+    word-wrap: break-word; 
 }
 
 .section-7 .text-4{

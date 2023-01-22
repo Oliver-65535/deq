@@ -113,9 +113,11 @@ li,a:hover{
 }
 
 .btn:hover{
-  background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
+  background-color: var(--hover-color);
+  /* background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%); */
   /* color: white; */
-  border: none;
+  /* border: none; */
+  border: #bcdbdd solid 1px;
 }
 
 .btn-primary{
@@ -138,6 +140,7 @@ li,a:hover{
 .btn-outline-primary{
   border: #39B5BF solid 1px;
   color: #39B5BF;
+  
 }
 
 .btn-large{

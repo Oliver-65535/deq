@@ -1,6 +1,6 @@
 var i = 0;
-var txt = ['F','Fu','Fut','Futu','Futur','Future','Future','Future','Future','Future','Future','Future','Future','Future','Future','Future','Future','Future','Futur','Futu','Fut','Fu','F','','','','','','','','','','','','','','',''];
-var speed = 300;
+var txt = ['Future','Wealth','Stability','Prosperity','SELF'];
+var speed = 3000;
 
 function typeWriter() {
   setInterval(

@@ -38,7 +38,7 @@ height: 8459px;
 
 .theme-light{
   --background-main: #ffffff;
-  --background-modal: #194056;
+  --background-modal: #f1f1f1;
   --background-1: #194056;
   --background-2: #173445;
   --background-3: none;
@@ -118,7 +118,13 @@ li,a:hover{
   padding: 64px;
 }
 
-
+.btn-modal{
+  background-color: #0A212E;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 20px;
+}
 
 .btn{
   font-size: 15px;

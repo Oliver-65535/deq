@@ -16,6 +16,7 @@ height: 8459px;
 
 .theme-dark{
   --background-main: #0a212e;
+  --background-modal: #194056;
   --background-1: #194056;
   --background-2: #173445;
   --background-3: #112835;
@@ -37,6 +38,7 @@ height: 8459px;
 
 .theme-light{
   --background-main: #ffffff;
+  --background-modal: #194056;
   --background-1: #194056;
   --background-2: #173445;
   --background-3: none;
@@ -103,6 +105,18 @@ li,a:hover{
 
 .navbar{ padding-left: 50px;
   padding-right: 50px;}
+
+
+.modal-dialog{
+  max-width: 550px;
+  padding: 0;
+}  
+
+.modal-content{
+  background: var(--background-modal);
+  
+  padding: 64px;
+}
 
 
 

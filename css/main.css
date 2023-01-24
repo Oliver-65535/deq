@@ -97,6 +97,18 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+body.dark-theme div,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p {
+  color: white;
+}
+
+
 li, a {
   color: var(--text-color-inverted);
 }

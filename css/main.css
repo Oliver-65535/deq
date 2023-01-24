@@ -1,17 +1,28 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 html {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
+}
+
+body {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .mcover{
   z-index: 11;
   position: absolute;
   width: 1440px;
-height: 8459px;
+  height: 8459px;
   background-image: url("/assets/imgs/LandingInvert.jpg");
-  background-size: 100%; /* Современные браузеры */;
+  background-size: 100%;
   opacity: 0.2;
-  
 }
 
 .theme-dark{
@@ -130,6 +141,7 @@ li,a:hover{
   font-size: 15px;
   border-radius: 50px;
   padding: 14px 28px;
+  transition: all .2s ease;
 }
 
 .btn:hover{
@@ -161,9 +173,7 @@ li,a:hover{
 }
 
 .btn-large{
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 120%;
   padding: 24px 64px;
@@ -182,8 +192,7 @@ li,a:hover{
 }
 
 .nav-text{
-  font-family: "Red Hat Display";
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: var(--text-color);
@@ -227,18 +236,16 @@ li,a:hover{
 
 .text-gradient-2{
   background: linear-gradient(136.13deg, #76C0DF -0.07%, #184D6B 101.73%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .section-1 {
   padding: 82px 50px 190px 50px;
   background: radial-gradient( at right bottom, rgba(118, 192, 223, 0.4) 10%, rgba(24, 77, 107, 0) 60%);
-
 }
-
 
 
 .section-2 {
@@ -248,7 +255,6 @@ text-fill-color: transparent;
 
 .slider-card {
   border-radius: 20px;
-  /* max-width: 543px; */
 } 
 
 .slider-card img {
@@ -265,12 +271,9 @@ text-fill-color: transparent;
 }
 
 .card-section-3 {
-  /* min-height: 300px; */
   background-color: #194056;
   border-radius: 20px;
   margin-bottom: 30px;
-  
-  
 }
 
 .section-3-icon {
@@ -341,9 +344,10 @@ margin-bottom: 24px;
 .section-6-icon {
   background-color: #194056;
   margin-left: 15px;
-  padding: 20px;
-  width: 90px;
-  height: 90px;
+  padding: 12px;
+  width: 100%;
+  max-width: 72px;
+  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,7 +355,9 @@ margin-bottom: 24px;
 }
 
 .section-6-icon img {
-  width: 50px;
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -364,14 +370,42 @@ margin-bottom: 24px;
   padding-left: 30px;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-top: 32px;
+}
+
 .card-section-7 {
   background: #0A212E;
   border-radius: 20px;
-
-  margin: 20px;
   padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 12px;
+  flex: 1 1 30%;
+}
+
+@media(max-width: 1200px) {
+  .card-section-7 {
+    flex: 1 1 45%;
+  }
+}
+
+@media(max-width: 768px) {
+  .card-section-7 {
+    flex: 1 1 100%;
+  }
+}
+
+
+.card-section-7 .d-flex {
   width: 100%;
-  height: 310px; 
 }
 
 .card-section-7-about {
@@ -399,12 +433,20 @@ margin-bottom: 24px;
 .card-section-7-icon {
   background-color: #173445;
   border-radius: 20px;
-  width: 110px;
-  height: 90px;
+  width: 100%;
+  height: 72px;
+  max-width: 72px;
+  padding: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+
+.card-section-7-icon img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
 }
 
 .col{
@@ -470,21 +512,7 @@ li,a{
   .btn-large-pd{
     padding: 20px 64px;
   }
-  
-  
-
-  /* .section-2{
-    font-size: 16px;
-    color: #6ED09E;
-    padding-left: -50px;
-    padding-right: -50px;
-  }  */
-
-  /* .section-7 {
-
-    padding-left: 20px;
-    padding-right: 20px;
-} */
+}
 
 .section-7 text-2{
   padding-left: 50px;
@@ -492,31 +520,26 @@ li,a{
   width: 50%;
 }
 
-.card-section-7 {
-  height: 320px; 
-}
 
 
 .md-text{
   font-size: 50%;
 }
 
-  .header{
-    flex-direction: column;
-  }
+.header{
+  flex-direction: column;
+}
 
-  .header .logo{
-    justify-content: center;
-  }
+.header .logo{
+  justify-content: center;
+}
 
-  .footer-logo{
-    text-align: center;
-  }
+.footer-logo{
+  text-align: center;
+}
 
-  .card-section-3-left {
-    border-radius: 0px 0px 20px 20px;
-  }
-
+.card-section-3-left {
+  border-radius: 0px 0px 20px 20px;
 }
 
 @media screen and (max-width: 700px) {

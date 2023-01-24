@@ -3,21 +3,24 @@
   border-radius: 14px;
   margin-right: 22px;
   margin-left: 6px;
+  padding: 4px 4px;
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
 }
 
 .icon-div{
   padding: 4px 6px;
   border-radius: 12px;
-  margin: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all .2s ease;
 }
 
 .icon-div:hover{
-  padding: 4px 6px;
   border-radius: 12px;
-  margin: 4px;
   display: flex;
   justify-content: center;
   align-items: center;

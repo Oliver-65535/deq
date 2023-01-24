@@ -8,6 +8,7 @@ btn.addEventListener("click", function() {
 function setTheme(themeName) {
   localStorage.setItem('theme', themeName);
   document.getElementById("theme").className = themeName;
+  setImage(themeName);
 }
 // function to toggle between light and dark theme
 function toggleTheme() {
@@ -16,6 +17,8 @@ function toggleTheme() {
  } else {
      setTheme('theme-dark');
  }
+
+ setImage();
 }
 // Immediately invoked function to set the theme on initial load
 (function () {
@@ -24,4 +27,17 @@ function toggleTheme() {
  } else {
      setTheme('theme-light');
  }
+
+ setImage();
 })();
+
+function setImage (themeName) {
+  console.log('set image');
+  const image = document.querySelector('.card-section-4 img');
+
+  if(localStorage.getItem('theme') === 'theme-dark') {
+    image.src = '/assets/imgs/howitwork.svg'
+  } else {
+    image.src = '/assets/imgs/howitworkblack.svg'
+  }
+};

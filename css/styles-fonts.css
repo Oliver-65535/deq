@@ -27,9 +27,16 @@
 .m-text-5{margin-bottom: 90px;}
 
 .section-1 .text-1{
-    font-weight: 700;
+    font-weight: 800;
     font-size: 96px;
     line-height: 112px;
+}
+
+@media(max-width: 768px) {
+    .section-1 .text-1 {
+        font-size: 62px;
+        line-height: 115%;
+    }
 }
 
 .section-1 .text-2{

@@ -93,13 +93,18 @@ p {
   color:  var(--text-color);
   margin-left: 0;
   padding-left: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-li,a{
+li, a {
   color: var(--text-color-inverted);
 }
 
-li,a:hover{
+body.theme-light li {
+  color: #0A212E;
+}
+
+li, a:hover{
   color: var(--hover-color);
 }
 
@@ -420,7 +425,7 @@ margin-bottom: 24px;
   margin: 20px;
   padding: 30px;
   width: 100%;
-  height: 150px; 
+  min-height: 150px;
 }
 
 .card-section-7-icon-about {

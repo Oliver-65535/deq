@@ -344,7 +344,7 @@ margin-bottom: 24px;
 .section-6-icon {
   background-color: #194056;
   margin-left: 15px;
-  padding: 12px;
+  padding: 18px;
   width: 100%;
   max-width: 72px;
   height: 72px;
@@ -352,6 +352,11 @@ margin-bottom: 24px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+
+.card__item {
+  display: flex;
+  column-gap: 12px;
 }
 
 .section-6-icon img {
@@ -491,6 +496,7 @@ margin-bottom: 24px;
 }
 
 .section-12 {
+  margin-top: 32px;
   background-color: var(--background-1);
   padding-left: 50px;
   padding-right: 50px;

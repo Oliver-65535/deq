@@ -70,3 +70,12 @@
     transform: rotate(15deg);
   }
 }
+
+@media (max-width: 970px) {
+  .dropping-texts > div {
+    top: 90px;
+  }
+  .section-1 .text-1 {
+    margin-bottom: 100px;
+  }
+}

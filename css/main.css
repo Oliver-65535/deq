@@ -108,16 +108,17 @@ body.dark-theme p {
   color: white;
 }
 
-
-li, a {
+li,
+a {
   color: var(--text-color-inverted);
 }
 
 body.theme-light li {
-  color: #0A212E;
+  color: #0a212e;
 }
 
-li, a:hover{
+li,
+a:hover {
   color: var(--hover-color);
 }
 
@@ -441,7 +442,7 @@ li, a:hover{
   margin: 20px;
   padding: 30px;
   width: 100%;
-  min-height: 150px;
+  height: 80%;
 }
 
 .card-section-7-icon-about {

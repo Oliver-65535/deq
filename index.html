@@ -24,6 +24,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Custom styles for this template -->
   </head>
 
@@ -82,7 +87,7 @@
         <form>
           <div class="form-group">
             <!-- <label for="recipient-name" class="col-form-label">Recipient:</label> -->
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Enter your email">
           </div>
         </form>
       </div>
@@ -97,15 +102,15 @@
       <div class="row section-1">
         <div class="col-lg-12 ">
           <h1 class="fw-light text-1 m-text-1">
-            Invest in your 
-              <!-- <b id="demo" class="text-1 text-gradient "></b> -->
-              <b class="dropping-texts">
-                <div>future</div>
-                <div>wealth</div>
-                <div>stability</div>
-                <div>prosperity</div>
-                <div>SELF</div>
-              </b>  
+              <span>Invest in your </span>
+              <span class="dropping-texts">
+                <span>Developers</span>
+                <span>Designers</span>
+                <span>Coders</span>
+                <span>EVERYONE!</span>
+              </span>
+              
+              
           </h1>
           <p class="lead text-2 m-text-2">Real Estate Investing for All</p>
           <p>
@@ -492,12 +497,16 @@
       <!-- /Section8 -->
       <!-- Section9 -->
       
-      <div class="row text-center section-9 d-flex justify-content-center align-items-center">
-        <div class="col"><img class="" src="assets/imgs/companies-logo/binance.svg" alt="" /></div>
-        <div class="col"><img class="" src="assets/imgs/companies-logo/Forbes.svg" alt="" /></div>
-        <div class="col d-md-none d-lg-block"><img class="" src="assets/imgs/companies-logo/coinbase.svg" alt="" /></div>
-        <div class="col d-lg-none d-xl-block"><img class="" src="assets/imgs/companies-logo/nasdaq.svg" alt="" /></div>
-        <div class="col d-lg-none d-xl-block"><img class="" src="assets/imgs/companies-logo/Bloomberg.svg" alt="" /></div>
+      <div class="swiper__container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="" src="assets/imgs/companies-logo/binance.svg" alt="" /></div>
+            <div class="swiper-slide"><img class="" src="assets/imgs/companies-logo/Forbes.svg" alt="" /></div>
+            <div class="swiper-slide"><img class="" src="assets/imgs/companies-logo/coinbase.svg" alt="" /></div>
+            <div class="swiper-slide"><img class="" src="assets/imgs/companies-logo/nasdaq.svg" alt="" /></div>
+            <div class="swiper-slide"><img class="" src="assets/imgs/companies-logo/Bloomberg.svg" alt="" /></div>
+          </div>
+        </div>
       </div>
       
       <!-- /Section9 -->
@@ -575,6 +584,39 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    
+      const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 4,
+        autoplay: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        },
+        768: {
+          slidesPerView: 5,
+        }
+      }
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

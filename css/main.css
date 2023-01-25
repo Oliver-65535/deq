@@ -354,6 +354,12 @@ a:hover {
 
 .section-6 {
   padding: 100px 50px 85px 50px;
+
+  background: radial-gradient(
+    at center right,
+    rgba(118, 192, 223, 0.15) 10%,
+    rgba(24, 77, 107, 0) 100%
+  );
 }
 
 .card-section-6 {
@@ -481,6 +487,12 @@ a:hover {
 
 .section-8 {
   padding: 100px 50px 70px 50px;
+
+  background: radial-gradient(
+    at center,
+    rgba(118, 192, 223, 0.15) 10%,
+    rgba(24, 77, 107, 0) 100%
+  );
 }
 
 .card-section-8 {
@@ -515,10 +527,10 @@ a:hover {
 .section-12 {
   margin-top: 32px;
   background-color: var(--background-1);
-  padding-left: 50px;
-  padding-right: 50px;
-  display: flex;
-  justify-content: center;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+  /* display: flex;
+  justify-content: center; */
   text-align: center;
 }
 

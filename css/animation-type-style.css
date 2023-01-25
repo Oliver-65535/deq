@@ -1,32 +1,43 @@
 .dropping-texts {
-  display: inline-block;
-  width: 180px;
+  position: relative;
   text-align: left;
-  height: 36px;
-  vertical-align: -2px;
+  height: 150px;
+  width: 350px;
 }
 
-.dropping-texts > div {
+@media(max-width: 768px) {
+  .dropping-texts {
+    height: 80px;
+    width: 100%;
+  }
+}
+
+.dropping-texts > span {
   font-size: 0px;
   opacity: 0;
-  margin-left: -30px;
   position: absolute;
-  top: 0px;
-  /* font-weight: 300; */
+  top: 15px;
+  left: 10px;
+  font-weight: 700;
   /* box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5); */
+  color: #39b5bf;
 }
 
-.dropping-texts > div:nth-child(1) {
+@media(max-width: 768px) {
+  .dropping-texts > span {
+    top: 2px;
+    left: 0;
+  }
+}
+
+.dropping-texts > span:nth-child(1) {
   animation: roll 5s linear infinite 0s;
 }
-.dropping-texts > div:nth-child(2) {
-  animation: roll 5s linear infinite 1s;
-}
-.dropping-texts > div:nth-child(3) {
+.dropping-texts > span:nth-child(2) {
   animation: roll 5s linear infinite 2s;
 }
-.dropping-texts > div:nth-child(4) {
-  animation: roll 5s linear infinite 3s;
+.dropping-texts > span:nth-child(3) {
+  animation: roll 5s linear infinite 4s;
 }
 .dropping-texts > div:nth-child(5) {
   animation: roll 5s linear infinite 4s;

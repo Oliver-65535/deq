@@ -70,6 +70,7 @@
     font-size: 62px;
     line-height: 115%;
   }
+}
 @media(max-width: 768px) {
     .section-1 .text-1 {
         font-size: 46px;
@@ -316,6 +317,8 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 75px;
+}
+
 @media (max-width: 768px) {
     .section-6 .text-1 {
         font-size: 36px;
@@ -341,7 +344,6 @@
         margin-left: 0;
     }
 }
-
 
 .section-7 .text-1 {
     font-weight: 700;

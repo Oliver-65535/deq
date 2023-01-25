@@ -28,6 +28,9 @@
 .dropping-texts > div:nth-child(4) {
   animation: roll 5s linear infinite 3s;
 }
+.dropping-texts > div:nth-child(5) {
+  animation: roll 5s linear infinite 4s;
+}
 
 @keyframes roll {
   0% {

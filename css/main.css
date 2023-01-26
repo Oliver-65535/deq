@@ -231,6 +231,11 @@ a:hover {
   color: #6ed09e;
 }
 
+.dropdown-menu{
+  background-color: var(--);
+  color: var(--text-color);
+}
+
 .nav-text {
   font-weight: 600;
   font-size: 16px;

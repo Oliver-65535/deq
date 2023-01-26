@@ -1,6 +1,4 @@
-.accordion-wrapper{
-    max-width: 850px;
-}
+
 
 .accordion {
     background-color: inherit ;
@@ -22,19 +20,19 @@
 }
 
 .active {
-    border: none;
+    opacity: 1;
 }
 
-.panel {
+/* .panel {
     padding: 0 18px;
     display: none;
-    /* background-color: white; */
+    background-color: white;
     overflow: hidden;
     border-bottom: 1px solid;
-}
+} */
 
 .accordion:after {
-    content: '\142f'; /* Unicode character for "plus" sign (+) */
+    /* content: '\142f'; Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
@@ -43,6 +41,6 @@
 }
 
 .active:after {
-    content: "\1431"; /* Unicode character for "minus" sign (-) */
+    /* content: "\1431"; Unicode character for "minus" sign (-) */
     
 }

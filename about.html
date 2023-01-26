@@ -52,11 +52,11 @@
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   EN
                 </button>
-                <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div> -->
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" onclick="setLanguage('EN')">EN-English</a>
+                  <a class="dropdown-item" onclick="setLanguage('ES')">ES-Spanish  </a>
+                  <a class="dropdown-item" onclick="setLanguage('PT')">PT-Portuguese</a>
+                </div>
               </div>
               <div class="btn-toggle d-flex  justify-content-between toggle-wrapper">
                 <div class="icon-div icon-div-light"><img src="assets/imgs/theme-icons/light-theme-icon.svg" alt=""></div>
@@ -269,6 +269,7 @@
         );
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/language.js"></script>
     <script src="assets/js/toggle-theme.js"></script>
     <script src="assets/js/typing-text-effect.js"></script>
     <script>

@@ -54,12 +54,12 @@
             <div class="d-flex justify-content-center align-items-center">
               <div class="dropdown mr-1 dropdown-wrapper">
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  EN
+                  <span id="lang">EN</span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">EN-English</a>
-                  <a class="dropdown-item" href="#">ES-Spanish  </a>
-                  <a class="dropdown-item" href="#">PT-Portuguese</a>
+                  <a class="dropdown-item" onclick="setLanguage('EN')">EN-English</a>
+                  <a class="dropdown-item" onclick="setLanguage('ES')">ES-Spanish  </a>
+                  <a class="dropdown-item" onclick="setLanguage('PT')">PT-Portuguese</a>
                 </div>
               </div>
               <div class="btn-toggle d-flex  justify-content-between toggle-wrapper">
@@ -630,6 +630,7 @@
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/toggle-theme.js"></script>
+    <script src="assets/js/language.js"></script>
     <script src="assets/js/typing-text-effect.js"></script>
     <script>
       Holder.addTheme("thumb", {

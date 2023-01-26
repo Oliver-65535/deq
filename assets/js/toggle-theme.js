@@ -41,3 +41,5 @@ function setImage (themeName) {
     image.src = '/assets/imgs/howitworkblack.svg'
   }
 };
+
+

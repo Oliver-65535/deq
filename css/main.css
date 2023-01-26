@@ -16,6 +16,7 @@ body {
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
+  background-color: #0a212e;
 }
 
 .mcover {
@@ -137,6 +138,18 @@ a:hover {
 
 .nav-link {
   padding: 0px 100px;
+}
+
+.nav-link {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 .navbar {
@@ -387,6 +400,7 @@ a:hover {
 }
 
 .section-4 {
+  min-height: 100vh;
   background-color: var(--background-3);
   padding: 100px 50px 120px 50px;
 }

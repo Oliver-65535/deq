@@ -1,81 +1,177 @@
-.dropping-texts {
-  display: inline-block;
-  width: 180px;
+.animation__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 112px;
+}
+
+.animation__text {
+  font-weight: bold;
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.animation__container__list {
+  margin-top: 0px;
   text-align: left;
-  height: 36px;
-  vertical-align: -2px;
+  list-style: none;
+  animation-name: change;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  padding-left: 690px;
 }
 
-.dropping-texts > div {
-  font-size: 0px;
-  opacity: 0;
-  margin-left: -30px;
-  top: 0px;
-  position: absolute;
-  font-weight: 700;
+.animation__item {
+  font-size: 96px;
+  font-weight: bold;
 }
 
-.dropping-texts > div:nth-child(1) {
-  animation: roll 5s linear infinite 0s;
-}
-.dropping-texts > div:nth-child(2) {
-  animation: roll 5s linear infinite 1s;
-}
-.dropping-texts > div:nth-child(3) {
-  animation: roll 5s linear infinite 2s;
-}
-.dropping-texts > div:nth-child(4) {
-  animation: roll 5s linear infinite 3s;
-}
-.dropping-texts > div:nth-child(5) {
-  animation: roll 5s linear infinite 4s;
+@media (max-width: 1250px) {
+  .animation__text {
+    font-size: 72px;
+  }
+  .animation__item {
+    font-size: 72px;
+  }
+
+  .animation__container__list {
+    padding-left: 508px;
+  }
 }
 
-@keyframes roll {
+@media (max-width: 992px) {
+  .animation__text {
+    font-size: 56px;
+    font-weight: bold;
+  }
+  .animation__item {
+    font-size: 56px;
+    font-weight: bold;
+  }
+
+  .animation__container__list {
+    padding-left: 390px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animation__text {
+    font-size: 56px;
+    font-weight: bold;
+    float: none;
+    display: none;
+  }
+  .animation__item {
+    font-size: 56px;
+    font-weight: bold;
+  }
+
+  .animation__container {
+    height: 48px;
+  }
+
+  .animation__container::before {
+    content: 'Invest in your';
+    font-weight: bold;
+    position: absolute;
+    top: -60px;
+  }
+
+  .animation__container__list {
+    padding-left: 0px;
+  }
+}
+
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+svg.intro.go {
+  height: 135px;
+}
+
+svg.intro.go .text  {
+  font-size: 96px;
+  text-transform: uppercase;
+  display: block;
+}
+
+svg.intro.go .text-stroke  {
+  fill: none;
+  stroke: white;
+  stroke-width: 40px;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+
+  animation-name: dash;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dash {
   0% {
-    font-size: 0px;
-    opacity: 0;
-    margin-left: -30px;
-    margin-top: 0px;
-    transform: rotate(-25deg);
+    stroke-dashoffset: -900;
   }
-  3% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  5% {
-    font-size: inherit;
-    opacity: 1;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  20% {
-    font-size: inherit;
-    opacity: 1;
-    margin-left: 0px;
-    margin-top: 0px;
-    transform: rotate(0deg);
-  }
-  27% {
-    font-size: 0px;
-    opacity: 0.5;
-    margin-left: 20px;
-    margin-top: 100px;
+  50% {
+    stroke-dashoffset: 0;
   }
   100% {
-    font-size: 0px;
-    opacity: 0;
-    margin-left: -30px;
-    margin-top: 0px;
-    transform: rotate(15deg);
-  }
-}
-
-@media (max-width: 970px) {
-  .dropping-texts > div {
-    top: 90px;
-  }
-  .section-1 .text-1 {
-    margin-bottom: 100px;
+    stroke-dashoffset: -900;
   }
 }
